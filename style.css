@@ -1,0 +1,200 @@
+:root {
+    --Color-primary: #11c76f;
+    --Color-secundary: #EFF0E8;
+    --Color-hover-list: #7dddaf;
+    --Color-hover-sublist: #f2f2f2;
+    --Color-hover-button: #365ad6;
+    --Color-button: #426dff;
+    --Color-section2: #263224;
+    --Color-main-text: #223324;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--Color-primary);
+    height: 42px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-logo {
+    margin-left: 10.4%;
+}
+
+.logo {
+    height: 36px;
+}
+
+/*MENU DE NAVEGAÇÃO*/
+.div-menu ul {
+    list-style-type: none; /*Remove as marcações da lista*/
+    padding: 0; /*Alinha todos no início (esquerda)*/
+    background-color: var(--Color-primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.div-menu .sublist {
+    display: none; /*Os elementos não aparecerão na tela*/
+}
+
+.div-menu ul li a {
+    color: var(--Color-secundary);
+    text-decoration: none;
+    padding: 16px;
+    font-size: 18px;
+    transition: color 0.2s; /*faz a transição de cor de forma mais suave*/
+    font-size: 14px;
+}
+
+.div-menu .main-list li a:hover {
+    color: var(--Color-hover-list); /*Muda a cor do fundo quando o mouse passa em cima do conteúdo da tag a*/
+}
+
+
+/*SUBLISTA*/
+.div-menu ul li:hover ul { /*Quando passar o mouse em cima de uma lista e essa lista tiver uma sub-lista, pegue essa ul e aplique:*/
+    position: absolute; /*não ocupam espaço de elementos estáticos e podem ser posicionado em relação a tag pai (ul li) com position não static*/
+    display: block;
+    left: 0; /*Irá se posicionar com 0 de margem a esquerda, em relação a sua primeira tag pai que não é estática, no caso, a ul acima dele*/
+    background-color: white;
+    border-radius: 10px;
+    width: max-content; /*Ajusta a largura para a largura do texto maior*/
+    padding: 8px 0;
+}
+
+.div-menu .sublist li a {
+    color: var(--Color-main-text);
+    display: block;
+    padding: 10px 20px;
+}
+
+.div-menu .sublist li a:hover {
+    background-color: var(--Color-hover-sublist);
+    color: var(--Color-main-text);
+}
+
+.div-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Color-button);
+    color: var(--Color-secundary);
+    margin-right: 11%;
+    height: 38px;
+    width: 167px;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.div-download a {
+    text-decoration: none;
+    color: var(--Color-secundary);
+    padding: 10px 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.div-download:hover {
+    background-color: var(--Color-hover-button);
+    transition: background 0.2s; 
+}
+
+/*1º SESSÃO*/
+.first-section {
+    background-image: url(./assets/IZA.png);
+    background-repeat: no-repeat;
+    background-position: 32vw 4vh;
+    background-size: 50%;
+    width: 100%;
+    height: 786px;
+    background-color: var(--Color-secundary);
+}
+
+.first-section .div-section1 {
+    margin: 0 11%;
+    height: 700px;
+    padding: 43px 0;
+    display: flex;
+}
+
+.first-section .div-section1 .main-text {
+    color: var(--Color-main-text);
+    display: block;
+    height: 700px;
+    width: 405px;
+}
+
+.first-section .div-section1 .main-text .text1 {
+    width: 405px;
+    height: 252px;
+}
+
+.first-section .div-section1 .main-text .text1 span{
+    display: block;
+}
+
+.first-section .div-section1 .main-text .text1 .span1{
+    font-size: 27.5px;
+}
+
+.first-section .div-section1 .main-text .text1 .span2{
+    font-size: 101px;
+}
+
+.first-section .div-section1 .main-text .text1 .span3{
+    font-size: 62px;
+}
+
+.first-section .div-section1 .main-text .text2 {
+    width: 405px;
+    height: 176px;
+}
+
+.div-button {
+    margin-top: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Color-button);
+    color: var(--Color-secundary);
+    height: 70px;
+    width: 260px;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.div-button a {
+    text-decoration: none;
+    color: var(--Color-secundary);
+    padding: 16px 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.div-button:hover {
+    background-color: var(--Color-hover-button);
+    transition: background 0.2s; 
+}
+
+.first-section .div-section1 .main-text .text3 {
+    width: 405px;
+    height: 32px;
+    font-size: 12px;
+}
+
+.second-section {
+    background-color: var(--Color-section2);
+    height: 383px;
+}
