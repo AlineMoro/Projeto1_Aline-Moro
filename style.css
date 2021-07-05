@@ -36,8 +36,7 @@ header {
 
 /*MENU DE NAVEGAÇÃO*/
 .div-menu ul {
-    list-style-type: none; /*Remove as marcações da lista*/
-     /*Alinha todos no início (esquerda)*/
+    list-style-type: none; 
     background-color: var(--Color-primary);
     font-family: 'Montserrat', sans-serif;
     font-size: 14.5px;
@@ -52,14 +51,14 @@ header {
 }
 
 .div-menu .sublist {
-    display: none; /*Os elementos não aparecerão na tela*/
+    display: none;
 }
 
 .div-menu ul li a {
     color: var(--Color-secundary);
     text-decoration: none;
     padding: 10px 16px;
-    transition: color 0.2s; /*faz a transição de cor de forma mais suave*/
+    transition: color 0.2s; 
 }
 
 .div-menu ul li a img {
@@ -69,18 +68,18 @@ header {
 }
 
 .div-menu .main-list li a:hover {
-    color: var(--Color-hover-list); /*Muda a cor do fundo quando o mouse passa em cima do conteúdo da tag a*/
+    color: var(--Color-hover-list); 
 }
 
 
 /*SUBLISTA*/
-.div-menu ul li:hover ul { /*Quando passar o mouse em cima de uma lista e essa lista tiver uma sub-lista, pegue essa ul e aplique:*/
-    position: absolute; /*não ocupam espaço de elementos estáticos e podem ser posicionado em relação a tag pai (ul li) com position não static*/
+.div-menu ul li:hover ul { 
+    position: absolute;
     display: block;
-    left: 0; /*Irá se posicionar com 0 de margem a esquerda, em relação a sua primeira tag pai que não é estática, no caso, a ul acima dele*/
+    left: 0;
     background-color: white;
     border-radius: 10px;
-    width: max-content; /*Ajusta a largura para a largura do texto maior*/
+    width: max-content;
     padding: 8px 0;
     margin-top: 10px;
 }
@@ -151,7 +150,7 @@ header {
 
 .first-section .div-section1 .main-text .text1 {
     width: 405px;
-    height: 298px;
+    height: 300px;
 }
 
 .first-section .div-section1 .main-text .text1 span{
@@ -161,7 +160,7 @@ header {
 }
 
 .first-section .div-section1 .main-text .text1 h1 {
-    line-height: 12.5vh;
+    line-height: 13vh;
 }
 
 .first-section .div-section1 .main-text .text1 .span1{
@@ -188,7 +187,7 @@ header {
 }
 
 .div-button {
-    margin-top: 135px;
+    margin-top: 128px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,5 +361,4 @@ footer {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
     }
-    
 }
